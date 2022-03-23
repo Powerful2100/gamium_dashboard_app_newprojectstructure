@@ -1,0 +1,105 @@
+.navbar-style {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    margin-left: 35px;
+    margin-right: 35px;
+
+    .navbar-left {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        height: 80px;
+        justify-content: flex-start;
+      }
+    
+      .navbar-right {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        height: 80px;
+        justify-content: flex-end;
+      }
+    
+      .btn-lang-wrapper {
+        border: 1px solid #242326;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .btn-lang-span {
+        padding: 5px 15px;
+        font-size: 120%;
+        font-weight: 900;
+        color: white;
+      }
+    
+      .btn-logout-container {
+        border: 1px solid #242326;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+      }
+    
+      .btn-logout-wrapper {
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px 0px 15px;
+      }
+
+      .btn-lang-wrapper:hover,
+      .btn-wallet-id-wrapper:hover,
+      .btn-logout-wrapper:hover {
+        background-color: #fdfdfd1a;
+      }
+
+      .btn-logout-span {
+        font-size: 120%;
+        font-weight: 900;
+        color: white;
+        white-space: nowrap;
+        margin: 5px 0px 5px 0px;
+      }
+    
+      .btn-logout-wrapper-2 {
+        background-color: #471E96;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        width: 32px;
+        border-radius: 3px;
+        margin: 3px 3px 3px 40px;
+        font-weight: 900;
+        font-size: 20px;
+      }
+    
+      .btn-wallet-id-wrapper {
+        border: 1px solid #242326;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .btn-wallet-id-span {
+        padding: 5px 15px;
+        font-size: 120%;
+        font-weight: 900;
+        color: white;
+      }
+}
+
+  

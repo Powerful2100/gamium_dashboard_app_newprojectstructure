@@ -1,0 +1,48 @@
+.modal-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #000000e6;
+	z-index: 1058;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-overlay-wrp {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.overlay-btn-style {
+	border: 1px solid var(--bs-primary);
+	background-color: transparent;
+	background: transparent;
+	cursor: pointer;
+	padding: 11px 40px;
+	border-radius: 5px;
+	color: white;
+	font-weight: 600;
+}
+
+.overlay-btn-style:hover {
+	background-color: #ffffff0d;
+	background: #ffffff0d;
+}
+
+input[type='range']::-moz-range-track {
+	background-color: #ffffff;
+	height: 4px;
+	border-radius: 3px;
+}
+
+.overlay-text-style {
+	font-weight: 600;
+	color: white;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}

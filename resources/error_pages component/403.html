@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&display=swap" rel="stylesheet">
+	
+    <link rel="icon" href="a-gamium-purple.svg" type="image/svg+xml" sizes="16x16">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELM7XF9TQJ"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-ELM7XF9TQJ');
+    </script>
+
+    <title>Gamium - The center of the Metaverse</title>
+    <meta name="googlebot" content="noindex, nofollow">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+	
+	<style>
+		:root {
+		  --space_header_height: 110;
+		  --space_page_width: 1920;
+		  --color-back: 10, 10, 12;
+		  --color-clear: 255, 255, 255, 0;
+		  --color-highlight: 10, 246, 180;
+		  --color-extra-dark-grey: 16, 16, 18;
+		  --color-middle-grey: 126, 126, 126;
+		  --padding-left_right: 40;
+		  --content-max-with: 830;
+		  --color-white: 255, 255, 255;
+		  --color-purple: 155, 93, 229;
+		  --color-dark-clear: 255, 255, 255, 10;
+		}
+
+		* {
+		  margin: 0;
+
+		  padding: 0;
+
+		  list-style: none;
+
+		  text-decoration: none;
+		}
+
+		body {
+		  margin: 0px;
+		  height: 100%;
+		  overflow: hidden;
+		  color: white;
+		  font-family: "Poppins", Geneva, Verdana, sans-serif;
+		  font-size: 14px;
+		  font-weight: 400;
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  user-select: none;
+		  background-color: rgb(var(--color-back));
+		}
+		@font-face {
+		  font-family: "Poppins";
+			font-style: normal;
+			font-weight: 200;
+			font-display: block;
+		}
+
+		@font-face {
+		  font-family: "Poppins";
+			font-style: normal;
+			font-weight: 400;
+			font-display: block;
+		}
+
+		@font-face {
+			font-family: "Poppins";
+			  font-style: normal;
+			  font-weight: 500;
+			  font-display: block;
+		  }
+
+		@font-face {
+		  font-family: "Poppins";
+			font-style: normal;
+			font-weight: 600;
+			font-display: block;
+		}
+
+		@font-face {
+		  font-family: "Poppins";
+			font-style: normal;
+			font-weight: 800;
+			font-display: block;
+		}
+		.container-error-page-web{
+		  height: 300px; 
+		  width:850px ; 
+		  display: flex; 
+		  position: absolute;
+		  top: 50%;
+		  left: 135px;
+		  transform: translateY(-50%); 
+		  z-index: 3;
+		}
+		.wapper-number-web {
+		  width: 150px;
+		  height: 100%;
+		  position: relative;
+		}
+		.span-number-web {
+		  position: absolute;
+		  right: 10px;
+		  top: 20px;
+		  font-size: 500%;
+		  font-weight: 900;
+		  color: #9b5de5;
+		}
+		.container-error-web {
+		  width: 650px;
+		  height: 100%;
+		  position: relative;
+		}
+		.wrapper-content-error-web {
+		  position: absolute;
+		  left: 5px;
+		  top: 40px;
+		  color: white;
+		  border-left: 2px solid white;
+		  padding-left: 20px;
+		}
+		.span-content-error-web {
+		  font-size: 100%;
+		  font-weight: 600;
+		}
+		.wrapper-description-error-web {
+		  position: absolute;
+		  left: 5px;
+		  top: 150px;
+		  color: white;
+		}
+		.span-description-error-web {
+		  font-size: 150%;
+		  font-weight: 900;
+		}
+		.container-btn-error-web {
+		  position: absolute;
+		  left: 5px;
+		  top: 230px;
+		  color: white;
+		  display: flex;
+		  justify-content: space-between;
+		  width: 35%;
+		}
+		.wrapper-btn-error-web {
+		  border: 1px solid #9b5de5;
+		  display: flex;
+		  border-radius: 2px;
+		  cursor: pointer;
+		  color: white;
+		}
+		.wrapper-btn-error-web:hover {
+		  color: black;
+		  background-color: #9b5de5;
+		}
+		.span-btn-error-web {
+		  font-size: 14px;
+		  padding: 11px 30px;
+		  font-weight: 900;
+		}
+		.img-page-error-web {
+		  float: right;
+		  width: 300px;
+		}
+		
+		/* Movile css*/
+		.container-error-page-mobile{
+		  display: none;
+		  height: 100vh;
+		  justify-content: center;
+		  align-items: center;
+		  margin-left: 25px;
+		  margin-right: 25px;
+		  z-index: 3;
+		}
+		/*.container-error-page-mobile{
+		  display: flex !important;
+		}*/
+		.container-error-mobile {
+		  height: 100%;
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: center;
+		}
+
+		.container-group-1-mobile {
+		  display: flex;
+		  justify-content: flex-start;
+		  flex-direction: row;
+		}
+
+		.wrapper-group-1-mobile {
+		  color: white;
+		  padding-left: 10px;
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		}
+
+		.wrapper-2-group-1-mobile {
+		  border-left: 2px solid white;
+		  padding-left: 10px;
+		}
+
+		.span-group-1-mobile {
+		  font-size: 500%;
+		  font-weight: 900;
+		  color: #9b5de5;
+		}
+
+		.span-2-group-1-mobile {
+		  font-size: 100%;
+		  font-weight: 100;
+		}
+
+		.container-group-2-mobile {
+		  color: white;
+		  margin-top: 40px;
+		}
+
+		.span-group-2-mobile {
+		  font-size: 100%;
+		  font-weight: 900;
+		}
+
+		.container-group-3-mobile {
+		  margin-top: 40px;
+		  color: white;
+		  display: flex;
+		  justify-content: space-between;
+		}
+
+		.wrapper-btn-mobile {
+		  border: 1px solid #9b5de5;
+		  display: flex;
+		  border-radius: 2px;
+		  cursor: pointer;
+		  color: white;
+		}
+
+		.wrapper-btn-mobile:hover {
+		  color: black;
+		  background-color: #9b5de5;
+		}
+
+		.span-btn-mbile {
+		  font-size: 100%;
+		  padding: 10px 40px;
+		  font-weight: 900;
+		}
+
+		.img-page-error-mobile {
+		  width: 300px;
+		  position: absolute;
+		  opacity: 0.4;
+		  z-index: -1;
+		}
+	</style>
+
+</head>
+
+<body>
+
+    <div id="container-error-page-web" class="container-error-page-web">
+        <div class="wapper-number-web">
+            <span class="span-number-web">403</span>
+        </div>
+        <div class="container-error-web">
+            <div class="wrapper-content-error-web">
+                <span class="span-content-error-web">
+                    <div><span>METAVERSE</span></div>
+                    <div><span>ACCESS</span></div>
+                    <div><span>DENIED</span></div>
+                </span>
+            </div>
+            <div class="wrapper-description-error-web">
+                <span class="span-description-error-web">
+                    <div><span>IT LOOKS LIKE THIS GATE IS FORBIDDEN FOR SOME REASON.</span></div>
+                    <div><span>LET US HELP YOU GUIDE YOU OUT.</span></div>
+                </span>
+            </div>
+            <div class="container-btn-error-web">
+                <a href="/">
+                    <div class="wrapper-btn-error-web">
+                        <span class="span-btn-error-web"><span>BACK</span></span>
+                    </div>
+                </a>
+                <a href="/">
+                    <div class="wrapper-btn-error-web">
+                        <span class="span-btn-error-web"><span>HOME</span></span>
+                    </div>
+                </a>
+            </div>
+
+            <img class="img-page-error-web" src="error_page.png" alt="">
+        </div>
+    </div>
+	
+	<!-- Movile view -->
+    <div id="container-error-page-mobile" class="container-error-page-mobile">
+        <div class="container-error-mobile">
+            <div class="container-group-1-mobile">
+                <div>
+                    <span class="span-group-1-mobile">403</span>
+                </div>
+                <div class="wrapper-group-1-mobile">
+                    <div class="wrapper-2-group-1-mobile">
+                        <span class="span-2-group-1-mobile">
+                            <div><span>METAVERSE</span></div>
+                            <div><span>ACCESS</span></div>
+                            <div><span>DENIED</span></div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="container-group-2-mobile">
+                <span class="span-group-2-mobile">
+                    <div><span>IT LOOKS LIKE THIS GATE IS FORBIDDEN FOR SOME REASON.</span></div>
+                    <div><span>LET US HELP YOU GUIDE YOU OUT.</span></div>
+                </span>
+            </div>
+            <div class="container-group-3-mobile">
+                <a href="index.html">
+                    <div class="wrapper-btn-mobile">
+                        <span class="span-btn-mbile"><span>BACK</span></span>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div class="wrapper-btn-mobile">
+                        <span class="span-btn-mbile"><span>HOME</span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <img class="img-page-error-mobile" src="error_page.png" alt="">
+    </div>
+    </div>
+
+</body>
+
+</html>

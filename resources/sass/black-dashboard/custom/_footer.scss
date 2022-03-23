@@ -1,0 +1,152 @@
+.floor {
+  background-image: url("../media/floor_01.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-animation: breathFloor 3s linear infinite;
+  animation: breathFloor 3s linear infinite;
+}
+
+.section-standar-background {
+  background-size: 100vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@-webkit-keyframes breathFloor {
+  0% {
+    background-image: url("../media/floor_01.png");
+  }
+  100% {
+    background-image: url("../media/floor_02.png");
+  }
+  50% {
+    background-image: url("../media/floor_02.png");
+  }
+}
+
+@keyframes breathFloor {
+  0% {
+    background-image: url("../media/floor_02.png");
+  }
+  100% {
+    background-image: url("../media/floor_01.png");
+  }
+  50% {
+    background-image: url("../media/floor_02.png");
+  }
+}
+
+.footer {
+  padding: 10px 30px; // 24px 30px
+
+  [class*="container-"] {
+    padding: 0;
+  }
+
+  .nav {
+    display: inline-block;
+    float: left;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav-item {
+    display: inline-block;
+
+    &:first-child a {
+      padding-left: 0;
+    }
+  }
+
+  .nav-link {
+    color: $white;
+    padding: $padding-base-vertical;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .copyright {
+    font-size: $font-size-sm;
+    line-height: 1.8;
+    color: $white;
+  }
+
+  &:after {
+    display: table;
+    clear: both;
+    content: " ";
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .footer {
+    padding-left: 30px;
+    text-align: center;
+
+    .copyright {
+      text-align: right;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .footer {
+    .copyright {
+      float: right;
+      margin-top: 5px;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .footer {
+    text-align: center;
+    nav {
+      display: block;
+      margin-bottom: 5px;
+      float: none;
+    }
+
+    .copyright {
+      text-align: center;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .footer {
+    .copyright {
+      text-align: center;
+    }
+    .nav {
+      float: none;
+    }
+  }
+}
+
+@include media-breakpoint-between(md, lg) {
+  .footer {
+    padding-left: 30px !important;
+    text-align: center;
+
+    .copyright {
+      float: right;
+      margin-top: 5px;
+    }
+  }
+}

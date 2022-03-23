@@ -1,0 +1,16 @@
+{
+    "mode": "STAGE",
+    "useWebsockets": false,
+    "tokenAddress": "0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee",
+    "contractAddress": "0x6eE68cD3c568B0A921beB8BE7E865aFC5C94Ea14",
+    "chainId": 3,
+    "network": 3,
+    "chainName": "Ethereum Ropsten",
+    "chainNativeCurrency": { "name": "Ethereum", "symbol": "ETH", "decimals": 18 }, 
+    "chainRpcUrls": ["wss://ws-nd-624-721-704.p2pify.com/294434fc760889347fa915ba56b61cd8"],
+    "chainBlockExplorerUrls": ["https://ropsten.etherscan.io/"], 
+    "apiBaseURL": "http://app.gamium.world/api/v1/",
+    "landBuyEventToastTimeout": 30000,
+    "avaliabilityDate": "mar 13, 2022 00:00:00"
+}
+
