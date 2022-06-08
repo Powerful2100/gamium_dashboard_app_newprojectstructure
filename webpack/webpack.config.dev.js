@@ -1,17 +1,12 @@
 const webpack = require("webpack");
-const path = require('path');
+const baseConfig = require('./webpack.config.base');
 
 module.exports = function override (config, env) {
-    console.log('overriding default react webpack config ...');
-    config.resolve.alias = {
-        abi: path.resolve(__dirname, 'src/abi'),
-        app: path.resolve(__dirname, 'src/app'),
-        assets: path.resolve(__dirname, 'src/assets'),
-        base: path.resolve(__dirname, 'src/base'),
-        modules: path.resolve(__dirname, 'src/modules'),
-        utils: path.resolve(__dirname, 'src/utils'),
-        styles: path.resolve(__dirname, 'src/styles'),
-     };
+
+    // Load base webpack config
+    config = baseConfig(config, env); // CRA + base config
+
+    // Update with development config
     config.resolve.fallback = {
         ...config.resolve.fallback,
         fs: false,
@@ -40,5 +35,5 @@ module.exports = function override (config, env) {
         }),
     ]
   
-    return config
-}
+    return config; // CRA + base config + dev config
+};

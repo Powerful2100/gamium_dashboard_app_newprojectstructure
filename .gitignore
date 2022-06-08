@@ -9,6 +9,11 @@
 # testing
 /coverage
 
+# certificates have to ve individually generated
+certs
+**/cert.pem
+**/key.pem
+
 # production
 build
 dist
