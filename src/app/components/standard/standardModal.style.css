@@ -1,0 +1,19 @@
+.modal-standard{
+	z-index: 9999;
+	background-color: #000000e6;
+}
+
+.modal-body{
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+.modal-alert .btn-close {
+	display: none;
+}
+
+.img-close-modal {
+	width: 20px;
+	cursor: pointer;
+}

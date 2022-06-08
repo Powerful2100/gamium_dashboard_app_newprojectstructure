@@ -1,11 +1,9 @@
 const mix = require('laravel-mix');
 
 mix.options({
-   legacyNodePolyfills: true
-});
-
-
-mix.js('src/index.js', 'build/js/app.js')
+      legacyNodePolyfills: true,
+   })
+   .js('src/index.js', 'build/js/app.js')
    .react()
    // .version()
    .extract()

@@ -1,0 +1,92 @@
+.navbar-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 35px;
+	padding-right: 35px;
+	height: 80px;
+}
+
+.burger-menu {
+	width: 35px;
+	height: 35px;
+	margin-right: 35px;
+	cursor: pointer;
+	border-radius: 0;
+}
+
+.navbar-logo-gamium {
+	height: 15px;
+	cursor: pointer;
+}
+
+#navId .active {
+	color: #ffffff !important;
+}
+
+#navId a {
+	color: #cccccc;
+}
+
+#navId a:hover,
+a:focus {
+	color: #ffffff !important;
+}
+
+.pr-25 {
+	padding: 0px 25px 0px 0px !important;
+}
+
+.mr-35 {
+	margin-right: 35px;
+}
+
+.ml-25 {
+	margin-left: 25px;
+}
+
+.nav-link {
+	color: #cccccc;
+	font-size: 14px;
+	cursor: pointer;
+	margin-right: 35px;
+	padding: 0px;
+}
+
+.nav-links-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.navbar-wrp {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+}
+
+.left-side-wrp {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar-wallet-btn-img {
+	width: 20px;
+	margin-left: 20px;
+}
+
+.btn-connect-span {
+	font-size: 14px;
+	color: white;
+}
+
+.spacer-vertical-line {
+	margin-right: 35px;
+	width: 2px;
+	height: 15px;
+	background-color: var(--bs-gray);
+}

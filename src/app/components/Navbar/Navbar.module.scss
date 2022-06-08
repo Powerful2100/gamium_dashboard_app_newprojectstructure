@@ -1,0 +1,39 @@
+@import "src/styles/mixins";
+@import "src/styles/theme";
+
+.Navbar {
+    z-index: 1;
+    background-color: #000000;
+    padding-bottom: 17.5px;
+    padding-top: 17.5px;
+    padding-right: 25px;
+    padding-left: 25px;
+    height: 60px;
+    -webkit-box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.6);
+
+    .NavbarWrp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+
+        .Logo {
+            display: flex;
+            align-items: center;
+            min-width: 275px;
+    
+            .LogoGamium {
+                height: 15px;
+                cursor: pointer;
+            }
+        }
+    
+        .LineWpr {
+            width: 100%;
+            height: 25px;
+        }
+    }
+}

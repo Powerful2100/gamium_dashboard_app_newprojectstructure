@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/*!
+
+=========================================================
+* GAMIUM Dashboard Pro - v1.0.0
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #471E96;
+  --bs-pink: #d63384;
+  --bs-red: #B24061;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #40B574;
+  --bs-teal: #20c997;
+  --bs-cyan: #8836F2;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #242326;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #242326;
+  --bs-gray-900: #1F1C27;
+  --bs-primary: #471E96;
+  --bs-secondary: #fff;
+  --bs-success: #40B574;
+  --bs-info: #8836F2;
+  --bs-warning: #ffc107;
+  --bs-danger: #B24061;
+  --bs-light: #f8f9fa;
+  --bs-dark: #1F1C27;
+  --bs-primary-rgb: 71, 30, 150;
+  --bs-secondary-rgb: 255, 255, 255;
+  --bs-success-rgb: 64, 181, 116;
+  --bs-info-rgb: 136, 54, 242;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 178, 64, 97;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 31, 28, 39;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 255, 255, 255;
+  --bs-body-bg-rgb: 0, 0, 0;
+  --bs-font-sans-serif: "Raleway";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #fff;
+  --bs-body-bg: #000;
+}

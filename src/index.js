@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './app/App';
 
 import { BrowserRouter } from 'react-router-dom';
 
 import reportWebVitals from './performance/reportWebVitals';
 
 import { Provider } from 'react-redux';
-import store from './store';
+import store from './base/store';
 
 ReactDOM.render(
   <Provider store={store}>
