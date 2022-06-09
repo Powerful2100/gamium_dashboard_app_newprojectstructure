@@ -1,6 +1,7 @@
 import { React } from 'react';
 import { PropTypes } from 'prop-types';
 import classnames from 'classnames';
+import { useTranslation } from 'react-i18next';
 
 import styles from './PortfolioPage.module.scss';
 import { PortfolioProvider } from '../../contexts/portfolioContext';
@@ -17,6 +18,8 @@ const defaultProps = {
 };
 
 const PortfolioPage = ({ className, id }) => {
+  const { t } = useTranslation(['portfolio']);
+
   const portfolioPageClassNames = classnames(styles.PortfolioPage, className);
 
   return (
@@ -25,7 +28,9 @@ const PortfolioPage = ({ className, id }) => {
       id={ id }
     >
       <PortfolioProvider>
-        PortfolioPage component
+        <h1>
+          {t('page.title')}
+        </h1>
         <TokensTable />
       </PortfolioProvider>
     </div>

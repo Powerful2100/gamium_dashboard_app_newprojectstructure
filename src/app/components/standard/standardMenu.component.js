@@ -8,10 +8,11 @@ import { ReactComponent as InstagramIcon } from 'assets/images/app/logo-instagra
 import { ReactComponent as MediumIcon } from 'assets/images/app/logo-medium.svg';
 import { ReactComponent as DiscordIcon } from 'assets/images/app/logo-discord.svg';
 import { ReactComponent as TelegramIcon } from 'assets/images/app/logo-paper-plane.svg';
+import { ReactComponent as CaretDownIcon } from 'assets/images/app/caret-down.svg';
 
 
 export const MenuComponent = ({ openMenu }) => {
-	const { t, i18n } = useTranslation();
+	const { t, i18n } = useTranslation(['app']);
 	const regexpEmail = new RegExp("^[a-z0-9]+(.[_a-z0-9]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,15})$");
 	const [email, setEmail] = useState("");
 	const [loading, setLoading] = useState(false);
@@ -61,7 +62,7 @@ export const MenuComponent = ({ openMenu }) => {
 						<div className="menu-language" >
 							<div className="language-wrp" onClick={changeLanguage} >
 								<span>{language}</span>
-								<img src="images/caret-down.svg" alt='Language' className='caret-down-img' />
+								<CaretDownIcon className='caret-down-img' />
 							</div>
 						</div>
 						<div className="menu-content-section"> </div>
@@ -182,7 +183,7 @@ export const MenuComponent = ({ openMenu }) => {
 					<div className="menu-language d-flex justify-content-center w-100 mt-3" >
 						<div className="language-wrp" onClick={changeLanguage} >
 							<span>{language}</span>
-							<img src="images/caret-down.svg" alt='Language' className='caret-down-img' />
+							<CaretDownIcon className='caret-down-img' />
 						</div>
 					</div>
 					<Form noValidate onSubmit={handleSubmit} className="mr-35 ml-35">

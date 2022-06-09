@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
+    "module": "commonjs",
     "baseUrl": ".",
     "allowJs": true,
     "skipLibCheck": true,
@@ -15,8 +16,7 @@
     "incremental": true
   },
   "include": [
-    "**/*.js",
-    "**/*.jsx"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules",

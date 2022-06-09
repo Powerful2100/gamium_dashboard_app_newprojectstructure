@@ -9,6 +9,8 @@ import reportWebVitals from './performance/reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './base/store';
 
+import './base/i18n.js';
+
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter basename="/">
