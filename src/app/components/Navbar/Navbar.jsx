@@ -3,6 +3,7 @@ import { PropTypes } from 'prop-types';
 import classnames from 'classnames';
 import { Link } from 'react-router-dom';
 import { Nav, Navbar as BoostrapNavbar } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 import PreprodLogo from 'assets/images/app/preprod.svg';
 import GamiumLogo from 'assets/images/app/logo.svg';
@@ -12,6 +13,7 @@ import config from 'app/config/config.json';
 import WalletAddressInfoComponent from '../wallet/walletAddressInfo.component';
 import { ReactComponent as CloseIcon } from 'assets/images/app/close.svg';
 import { ReactComponent as BurgerIcon } from 'assets/images/app/burger-menu.svg';
+import { routes } from '../../config/routing';
 
 import styles from './Navbar.module.scss';
 import '../standard/standardNavbar.style.css';
@@ -31,7 +33,11 @@ const defaultProps = {
 };
 
 const NavBar = ({ id, className, isMenuOpened, callbackOpenMenu }) => {
+	const { t } = useTranslation(['app']);
+
 	const toggleMenuOpened = () => callbackOpenMenu(!isMenuOpened);
+
+	const navRoutes = Object.values(routes).filter(route => route.path !== '/');
 
 	const MenuIcon = isMenuOpened ? CloseIcon : BurgerIcon;
     const navbarClassNames = classnames(styles.Navbar, className);
@@ -54,16 +60,13 @@ const NavBar = ({ id, className, isMenuOpened, callbackOpenMenu }) => {
 					</a>
 				</div>
 				<Nav className='LineWpr d-flex flex-row align-items-center'>
-					<div>
-						<Link className='nav-link no-padding' to={'/map'}>
-							Map
+				{ navRoutes.map((route) => (
+						<div>
+						<Link className='nav-link no-padding' to={ route.path }>
+							{ t(route.title) }
 						</Link>
 					</div>
-					<div>
-						<Link className='nav-link no-padding ml-10' to={'/inventory'}>
-							Inventory
-						</Link>
-					</div>
+				) )}
 				</Nav>
 				<div className='d-flex justify-content-end align-items-center w-50' style={{ height: 25 }}>
 					<WalletAddressInfoComponent />

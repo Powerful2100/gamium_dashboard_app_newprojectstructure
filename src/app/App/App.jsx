@@ -13,9 +13,8 @@ import Web3 from 'web3';
 import { isBrowser } from 'react-device-detect';
 
 import config from '../config/config.json';
-import PortfolioPage from '../../modules/portfolio/pages/PortfolioPage/PortfolioPage';
 import MenuComponent from '../components/standard/standardMenu.component';
-
+import { routes } from '../config/routing';
 
 
 const blockchainProviderOptions = {
@@ -97,7 +96,9 @@ class App extends Component {
 					  <NavBar isMenuOpened={ isMenuOpened } callbackOpenMenu={ this.callbackOpenMenu }/>
 					  	<MenuComponent openMenu={ isMenuOpened } callbackOpenMenu={ this.callbackOpenMenu } />
 						<Switch>
-							<Route exact path={['/', '/portfolio']} component={ PortfolioPage } />
+							{ Object.values(routes).map((route) => (
+								<Route exact path={ route.path } component={ route.component } />
+							) )}
 						</Switch>
 					</div>
 				)
