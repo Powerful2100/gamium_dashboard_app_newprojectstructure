@@ -1,8 +1,7 @@
 import React from 'react';
-import { PropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import { useTranslation } from 'react-i18next';
-import usePortfolioContext from '../../contexts/portfolioContext';
 
 import styles from './PortfolioPage.module.scss';
 import { PortfolioProvider } from '../../contexts/portfolioContext';
