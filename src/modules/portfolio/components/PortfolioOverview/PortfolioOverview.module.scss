@@ -1,0 +1,9 @@
+@import "src/styles/mixins";
+@import "src/styles/theme";
+
+.PortfolioOverview {
+
+    .PortfolioForm {
+        max-width: 400px;
+    }
+}

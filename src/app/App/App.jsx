@@ -97,7 +97,12 @@ class App extends Component {
 					  	<MenuComponent openMenu={ isMenuOpened } callbackOpenMenu={ this.callbackOpenMenu } />
 						<Switch>
 							{ Object.values(routes).map((route) => (
-								<Route exact path={ route.path } component={ route.component } />
+								<Route 
+									key={ `route-${route.path}` }
+									exact 
+									path={ route.path } 
+									component={ route.component } 
+								/>
 							) )}
 						</Switch>
 					</div>

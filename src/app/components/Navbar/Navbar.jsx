@@ -61,7 +61,7 @@ const NavBar = ({ id, className, isMenuOpened, callbackOpenMenu }) => {
 				</div>
 				<Nav className='LineWpr d-flex flex-row align-items-center'>
 				{ navRoutes.map((route) => (
-						<div>
+					<div key={ `nav-link-${route.path}` } >
 						<Link className='nav-link no-padding' to={ route.path }>
 							{ t(route.title) }
 						</Link>

@@ -1,18 +1,23 @@
-import { React, useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { usePortfolio } from '../../hooks';
 import { PortfolioContext } from './portfolioContext';
 
 const PortfolioProvider = ({ children }) => {
-  const [portfolio, setPortfolio] = useState({});
+  const [chainId, setChainId] = useState(undefined);
+  const [address, setAddress] = useState('');
+  const { portfolio, error, loading, fetchPortfolio } = usePortfolio(chainId, address);
 
-  const fetchPortfolioData = () => {};
-
-  useEffect(() => {
-      fetchPortfolioData();
-  });
-
+  console.log(process.env);
+  
   const contextValue = {
+    chainId,
+    address,
     portfolio,
-    setPortfolio,
+    error,
+    loading,
+    setChainId,
+    setAddress,
+    fetchPortfolio,
   }; 
 
   return (

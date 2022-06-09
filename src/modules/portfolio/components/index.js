@@ -1,5 +1,7 @@
-import TokensTable from './TokensTable';
+import PortfolioTable from './PortfolioTable';
+import PortfolioOverview from './PortfolioOverview';
 
 export {
-    TokensTable,
+    PortfolioOverview,
+    PortfolioTable,
 }

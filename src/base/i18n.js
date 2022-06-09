@@ -4,6 +4,7 @@ import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 import traslations from 'app/translations';
+import env from 'app/config/env';
 
 
 i18n
@@ -13,7 +14,7 @@ i18n
   .init({
     lng: "en",
     fallbackLng: 'en',
-    debug: true,
+    debug: env.DEBUG,
     interpolation: {
       escapeValue: false
     },

@@ -9,7 +9,7 @@
     "chainNativeCurrency": { "name": "Ethereum", "symbol": "ETH", "decimals": 18 }, 
     "chainRpcUrls": ["wss://ws-nd-624-721-704.p2pify.com/294434fc760889347fa915ba56b61cd8"],
     "chainBlockExplorerUrls": ["https://ropsten.etherscan.io/"], 
-    "apiBaseURL": "http://app.gamium.world/api/v1/",
+    "apiBaseURL": "http://localhost",
     "landBuyEventToastTimeout": 30000,
     "avaliabilityDate": "mar 13, 2022 00:00:00"
 }
